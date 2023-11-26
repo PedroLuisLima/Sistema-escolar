@@ -24,7 +24,7 @@ public class Main {
         if(media <10 && media >=0);{
             if (media >=7){
                 estado= "Aprovado!";
-            } else if (media<=7 && media<= 4){
+            } else if (media<7 && media>= 4){
                 estado= "Recuperaçao";
             } else{
                 estado= "Reprovado!";
@@ -33,7 +33,7 @@ public class Main {
         String mediafinal= String.format("%.1f", media);
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);
-        System.out.println("Media do aluno: " + media);
+        System.out.println("Media do aluno: " + mediafinal);
         System.out.println("Estado do aluno: " + estado);
 
         System.out.println("---------------------------");
@@ -57,7 +57,7 @@ public class Main {
         if(media2 <10 && media2 >=0);{
             if (media2 >=7){
                 estado2= "Aprovado!";
-            } else if (media2<=7 && media2<= 4){
+            } else if (media2<7 && media2>= 4){
                 estado2= "Recuperaçao";
             } else{
                 estado2= "Reprovado!";
@@ -66,7 +66,7 @@ public class Main {
         String mediafinal2= String.format("%.1f", media2);
         System.out.println("Nome: " + nome2);
         System.out.println("Email: " + email2);
-        System.out.println("Media do aluno: " + media2);
+        System.out.println("Media do aluno: " + mediafinal2);
         System.out.println("Estado do aluno: " + estado2);
 
         String estado3= "";
@@ -88,7 +88,7 @@ public class Main {
         if (media3<=10 && media3>=0){
             if(media3>=7){
                 estado3= "Aprovado!";
-            }else if (media3<=7 && media3>=4){
+            }else if (media3<7 && media3>=4){
                 estado3= "Recuperação!";
             } else{
                 estado3= "Reprovado!";
@@ -97,7 +97,7 @@ public class Main {
         String mediafinal3= String.format("%.1f", media3);
         System.out.println("Nome: "+nome3);
         System.out.println("Email: "+email3);
-        System.out.println("Media do terceiro aluno: "+ media3);
+        System.out.println("Media do terceiro aluno: "+ mediafinal3);
         System.out.println("Estado: "+ estado3);
         }
     }
